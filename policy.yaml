@@ -1,0 +1,13 @@
+policies:
+  - id: P1
+    column: occupation
+    rule: mask_for_viewer
+    description: Mask occupation for viewer role to reduce re-identification risk.
+  - id: P2
+    column: sex
+    rule: no_aggregate_below_k
+    k: 5
+    description: Suppress aggregates with group size < 5.
+  - id: P3
+    rule: retention_3_years
+    description: Retain raw data for 3 years, then purge.

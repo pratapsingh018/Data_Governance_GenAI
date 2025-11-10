@@ -1,0 +1,56 @@
+dataset: adult_income
+description: UCI Adult Income dataset (Census data) used for income classification.
+source: https://archive.ics.uci.edu/ml/datasets/Adult
+columns:
+  - name: age
+    type: integer
+    pii: false
+    description: Age of the individual in years.
+  - name: workclass
+    type: string
+    pii: false
+    description: Employment type.
+  - name: fnlwgt
+    type: integer
+    pii: false
+    description: Final sampling weight.
+  - name: education
+    type: string
+    pii: false
+    description: Highest level of education achieved.
+  - name: education_num
+    type: integer
+    pii: false
+    description: Numeric representation of education.
+  - name: marital_status
+    type: string
+    pii: false
+    description: Marital status.
+  - name: occupation
+    type: string
+    pii: true
+    description: Occupation type.
+  - name: relationship
+    type: string
+    pii: false
+  - name: race
+    type: string
+    pii: false
+  - name: sex
+    type: string
+    pii: false
+  - name: capital_gain
+    type: integer
+    pii: false
+  - name: capital_loss
+    type: integer
+    pii: false
+  - name: hours_per_week
+    type: integer
+    pii: false
+  - name: native_country
+    type: string
+    pii: false
+  - name: income
+    type: string
+    pii: false
